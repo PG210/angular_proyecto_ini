@@ -1,0 +1,26 @@
+<h1>listado</h1>
+<ul>
+    <li *ngFor="let her of heroes; let i=index">
+        {{i+1}} {{her}}
+    </li>
+</ul>
+
+<div *ngIf="borrado; else noBorrado"> <!--retorna mensaje cuando presiona tecla--> 
+    <h3>Heroe borrado <small>{{borrado}}</small></h3>
+    
+</div>
+ <!--retorna mensaje cuando presiona tecla--> 
+<!--<div *ngIf="!borrado">
+    <h3>No ha borrado nada</h3>
+    
+</div>-->
+<ng-template #noBorrado>
+<div>No ha borrado nada</div>
+</ng-template>
+
+
+<!--para hacer una validacion con el template-->
+
+
+
+<button (click)="borrarHeroe()">Borrar</button>

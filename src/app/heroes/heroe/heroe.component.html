@@ -1,0 +1,29 @@
+<h1>hola superheroe</h1>
+
+<table border="1">
+	<tr>
+		<td>Nombre</td> 
+        <td>{{nombre}}</td> 
+    </tr>
+	<tr>
+		<td>Edad</td> 
+        <td>{{edad}}</td>
+    </tr>
+    <tr>
+        <td>Concatenar</td>
+        <td>{{obtenerNombre()}}</td> <!--Llama un metodo-->
+        
+    </tr>
+    <tr>
+        <td>Mayusculas</td>
+        <td>{{nombreCapital}}</td><!--llama el get del ts-->
+        <!--<td>{{nombre.toUpperCase()}}</td> --><!--cambia a mayusculas el toupercase-->
+        
+    </tr>
+
+    <tr>
+        <td><button (click)='cambiarNombre();'>Cambiar Nombre</button></td>
+        
+        <td><button (click)='cambiarEdad();'>Cambiar edad</button></td>
+    </tr>
+</table>
