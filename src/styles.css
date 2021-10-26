@@ -40,3 +40,17 @@
   .p-1 {
     padding: 1px;
   }
+
+  /*Aqui agregamos codigo css*/
+  .row{
+    display: flex;/*sirve para colocar dos textos alado*/
+  }
+  .col{
+    flex-grow: 1;/*separa las columnas lo mas que pueda*/
+    margin-right: 10px;/*coloca margen a un lado*/
+    margin-left: 10px;
+  }
+  input{
+     display: block;/*coloca los inputs en forma vertical*/
+     margin: 5px;
+  }

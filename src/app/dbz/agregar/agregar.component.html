@@ -1,0 +1,9 @@
+<h3>Agregar</h3>
+    <hr>
+    <form (ngSubmit)="agregar()"><!--agrega una metodo onclik al formulario-->
+        <input type="text" placeholder="Nombre" name="nombre" [(ngModel)]="nuevo.nombre"/>
+        <input type="number" placeholder="Poder" name="poder" [(ngModel)]="nuevo.poder"/>
+        <!--[(ngmodel)] emite y recibe propiedades-->
+        <!--debe de ir con el name para llamar a la propiedad-->
+        <button type="submit">Agregar</button>
+    </form>

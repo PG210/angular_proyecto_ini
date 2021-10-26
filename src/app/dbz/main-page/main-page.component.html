@@ -1,0 +1,12 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+<div class="row">
+    <div class="col">
+        <app-personajes></app-personajes> <!--instancia un modulo o una vista dentro de un modulo-->
+    </div> 
+<div class="col">
+   <!--quitamos la parte de html para mandarlo a agregar.component.html--> 
+     <app-agregar [nuevo]="nuevo"
+     ></app-agregar><!--el [nuevo] esta registrando un personaje por defecto-->
+</div>
+</div>
